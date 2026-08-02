@@ -1,0 +1,257 @@
+.analytics-header{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:0}.analytics-header-left h1{font-size:22px;font-weight:900;color:var(--text);letter-spacing:-.35px;margin:0}.analytics-header-left p{font-size:12.5px;color:var(--muted);margin:4px 0 0}.period-tabs{display:flex;gap:6px;flex-wrap:wrap}.period-tab{display:inline-flex;align-items:center;justify-content:center;background:var(--surface);border:1.5px solid var(--border);border-radius:12px;padding:8px 13px;font-size:12px;font-weight:900;color:var(--muted);cursor:pointer;transition:.16s}.period-tab.active,.period-tab:hover{background:var(--primary);border-color:var(--primary);color:#fff;box-shadow:0 6px 16px rgba(29,184,118,.18)}.analytics-note{background:var(--surface);border:1.5px solid var(--border);border-radius:var(--r);box-shadow:var(--shadow);padding:15px 18px;display:flex;gap:12px;align-items:flex-start}.analytics-note-icon{width:34px;height:34px;border-radius:12px;background:var(--primary-glow);color:var(--primary);display:flex;align-items:center;justify-content:center;font-weight:900;flex-shrink:0}.analytics-note-title{font-size:13px;font-weight:900;color:var(--text)}.analytics-note-text{font-size:12.5px;color:var(--muted);margin-top:2px}.charts-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.chart-card{background:var(--surface);border:1.5px solid var(--border);border-radius:var(--r);box-shadow:var(--shadow);overflow:hidden;transition:.18s}.chart-card:hover{transform:translateY(-2px);box-shadow:var(--shadow-md)}.chart-card-head{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;border-bottom:1.5px solid var(--border);background:var(--surface2)}.chart-card-title{font-size:13.5px;font-weight:900;color:var(--text);letter-spacing:-.2px}.chart-card-sub{font-size:11.5px;color:var(--dim);margin-top:2px}.chart-card-type{font-size:10.5px;font-weight:900;color:var(--primary);background:var(--primary-glow);padding:3px 9px;border-radius:20px}.chart-card-body{padding:16px 18px;position:relative}.chart-svg-wrap{width:100%;height:170px;position:relative}.chart-svg-wrap svg{width:100%;height:100%;overflow:visible}.chart-x-labels{display:flex;justify-content:space-between;padding:6px 0 0}.chart-x-labels span{font-size:10px;color:var(--dim);font-weight:700}.bar-chart-wrap{display:flex;align-items:flex-end;gap:6px;height:150px;padding-bottom:20px;position:relative}.bar-col-a{display:flex;flex-direction:column;align-items:center;gap:4px;flex:1}.bar-a{width:100%;border-radius:6px 6px 0 0;min-height:4px;cursor:pointer;transition:.18s}.bar-a:hover{filter:brightness(.96);transform:translateY(-1px)}.bar-lbl{font-size:10px;color:var(--dim);font-weight:700}.chart-legend{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:8px}.legend-item{display:flex;align-items:center;gap:5px;font-size:11.5px;color:var(--muted);font-weight:700}.legend-dot{width:9px;height:9px;border-radius:3px;flex-shrink:0}.chart-tooltip{position:absolute;background:var(--text);color:#fff;font-size:11px;font-weight:700;padding:5px 10px;border-radius:6px;pointer-events:none;opacity:0;transition:.15s;white-space:nowrap;z-index:10;line-height:1.6}.chart-tooltip.show{opacity:1}.summary-section{margin-bottom:18px}.summary-section-label{font-size:11px;font-weight:900;letter-spacing:.8px;text-transform:uppercase;color:var(--dim);margin-bottom:12px;padding:0 2px}.summary-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.summary-card{background:var(--surface);border:1.5px solid var(--border);border-radius:var(--r);padding:18px 16px;box-shadow:var(--shadow);position:relative;overflow:hidden}.summary-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--primary)}.sc-icon{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:16px;margin-bottom:12px;background:var(--primary-glow)}.sc-label{font-size:11px;font-weight:900;letter-spacing:.7px;text-transform:uppercase;color:var(--dim);margin-bottom:6px}.sc-value{font-size:24px;font-weight:900;color:var(--text);letter-spacing:-1px;line-height:1;margin-bottom:6px}.sc-change{font-size:11.5px;font-weight:800;display:inline-flex;align-items:center;gap:3px;padding:2px 8px;border-radius:20px;background:var(--primary-glow);color:var(--primary)}@media(max-width:900px){.charts-grid{grid-template-columns:1fr}.summary-cards{grid-template-columns:repeat(2,1fr)}}@media(max-width:560px){.summary-cards{grid-template-columns:1fr}.analytics-note{align-items:flex-start}.period-tabs{width:100%}.period-tab{flex:1}}
+
+.finance-report-card{background:var(--surface);border:1.5px solid var(--border);border-radius:var(--r);box-shadow:var(--shadow);padding:18px;margin:16px 0}
+.finance-report-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-wrap:wrap;border-bottom:1.5px solid var(--border);padding-bottom:14px;margin-bottom:14px}
+.finance-report-head h2{margin:4px 0 3px;font-size:18px;color:var(--text);letter-spacing:-.25px}
+.finance-report-head p{margin:0;color:var(--muted);font-size:12.5px}
+.finance-email-btn{border:0;background:var(--primary);color:#fff;border-radius:12px;padding:10px 14px;font-weight:900;cursor:pointer;box-shadow:0 8px 18px rgba(29,184,118,.16)}
+.finance-email-btn:hover{filter:brightness(.96)}
+.finance-report-total{display:flex;justify-content:space-between;align-items:center;background:var(--surface2);border:1.5px solid var(--border);border-radius:14px;padding:12px 14px;margin-bottom:14px;color:var(--muted);font-size:13px}
+.finance-report-total strong{font-size:18px;color:var(--text)}
+.finance-empty{padding:14px;border:1.5px dashed var(--border);border-radius:14px;color:var(--muted);font-size:13px}
+.finance-table-wrap{overflow-x:auto}
+.finance-table{width:100%;border-collapse:collapse;font-size:12.5px}
+.finance-table th,.finance-table td{padding:10px 9px;text-align:left;border-bottom:1px solid var(--border);white-space:nowrap}
+.finance-table th{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);background:var(--surface2)}
+.finance-table td{color:var(--text)}
+.notice.success{border-color:rgba(29,184,118,.32);background:rgba(29,184,118,.08);color:var(--primary)}
+
+/* Analytics UI cleanup: summary first, two meaningful charts, cleaner KPI cards */
+.summary-section-top{
+  margin:16px 0 18px;
+}
+.summary-section-top .summary-section-label{
+  margin-bottom:10px;
+}
+.summary-cards{
+  align-items:stretch;
+}
+.summary-card{
+  min-height:134px;
+  padding:17px 16px 16px;
+  border-radius:18px;
+}
+.summary-card::before{
+  height:4px;
+  background:linear-gradient(90deg,var(--primary),rgba(61,191,164,.65));
+}
+.sc-icon{
+  width:40px;
+  height:40px;
+  border-radius:14px;
+  background:linear-gradient(135deg,var(--primary-glow),rgba(255,255,255,.92));
+  color:var(--primary);
+  font-size:17px;
+  font-weight:900;
+  box-shadow:inset 0 0 0 1px rgba(29,184,118,.08);
+}
+.sc-icon.text-icon{
+  width:auto;
+  min-width:46px;
+  padding:0 10px;
+  font-size:12px;
+  letter-spacing:.04em;
+}
+.sc-icon.money-icon{
+  font-size:20px;
+}
+.sc-label{
+  line-height:1.25;
+}
+.sc-value{
+  font-size:26px;
+  letter-spacing:-.8px;
+}
+.sc-change{
+  padding:4px 9px;
+  border-radius:999px;
+  font-size:10.8px;
+  line-height:1.2;
+}
+.insight-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:14px;
+  margin:0 0 16px;
+}
+.insight-card{
+  background:linear-gradient(135deg,var(--surface),rgba(239,249,244,.86));
+  border:1.5px solid var(--border);
+  border-radius:18px;
+  box-shadow:var(--shadow);
+  padding:16px 18px;
+}
+.insight-kicker{
+  display:inline-flex;
+  align-items:center;
+  margin-bottom:8px;
+  color:var(--primary);
+  background:var(--primary-glow);
+  border-radius:999px;
+  padding:4px 9px;
+  font-size:10.5px;
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:.06em;
+}
+.insight-card strong{
+  display:block;
+  font-size:16px;
+  color:var(--text);
+  letter-spacing:-.25px;
+  margin-bottom:5px;
+}
+.insight-card p{
+  margin:0;
+  color:var(--muted);
+  font-size:12.5px;
+  line-height:1.5;
+}
+.charts-grid-two{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  margin-bottom:18px;
+}
+.emphasis-card .chart-card-head{
+  padding:16px 20px;
+}
+.emphasis-card .chart-card-title{
+  font-size:15px;
+}
+.emphasis-card .chart-card-sub{
+  font-size:12px;
+}
+.emphasis-card .chart-card-body{
+  padding:20px 22px 18px;
+}
+.emphasis-card .chart-svg-wrap{
+  height:210px;
+}
+.emphasis-card .bar-chart-wrap{
+  height:210px;
+  gap:8px;
+  padding-bottom:26px;
+}
+.emphasis-card .bar-a{
+  min-height:6px;
+  border-radius:8px 8px 2px 2px;
+}
+.finance-report-card{
+  margin-top:18px;
+}
+.finance-report-total{
+  background:linear-gradient(135deg,var(--surface2),rgba(239,249,244,.78));
+}
+.finance-table td:nth-child(7){
+  color:#b45438;
+  font-weight:800;
+}
+.finance-table td:nth-child(8){
+  color:var(--primary);
+  font-weight:900;
+}
+@media(max-width:1100px){
+  .summary-cards{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:900px){
+  .charts-grid-two,
+  .insight-grid{grid-template-columns:1fr}
+  .emphasis-card .chart-svg-wrap,
+  .emphasis-card .bar-chart-wrap{height:190px}
+}
+@media(max-width:560px){
+  .summary-cards{grid-template-columns:1fr}
+  .summary-card{min-height:118px}
+}
+
+
+/* Period-aware analytics polish */
+.analytics-header-compact{
+  justify-content:flex-end;
+  margin-top:-4px;
+  margin-bottom:14px;
+}
+.analytics-header-compact .period-tabs{
+  margin-left:auto;
+}
+.sc-icon{
+  font-size:20px;
+  line-height:1;
+}
+.sc-icon.text-icon{
+  min-width:40px;
+  width:40px;
+  padding:0;
+  font-size:19px;
+  letter-spacing:0;
+}
+.money-icon{
+  font-size:21px;
+}
+.bar-chart-wrap{
+  position:relative;
+}
+.bar-a{
+  position:relative;
+}
+.bar-a::after{
+  content:attr(data-v);
+  position:absolute;
+  left:50%;
+  bottom:calc(100% + 6px);
+  transform:translateX(-50%);
+  background:var(--text);
+  color:#fff;
+  font-size:10.5px;
+  font-weight:900;
+  padding:4px 7px;
+  border-radius:8px;
+  opacity:0;
+  pointer-events:none;
+  white-space:nowrap;
+  transition:.14s ease;
+  z-index:20;
+}
+.bar-a:hover::after{
+  opacity:1;
+}
+.emphasis-card .bar-chart-wrap{
+  overflow:visible;
+}
+.chart-x-labels span:empty,
+.bar-lbl:empty{
+  visibility:hidden;
+}
+@media(max-width:640px){
+  .analytics-header-compact{justify-content:flex-start}
+  .analytics-header-compact .period-tabs{margin-left:0;width:100%}
+}
+
+
+/* 30-day chart and tooltip cleanup */
+.analytics-note{display:none!important}
+.bar-a::after{content:none!important;display:none!important}
+.bar-chart-wrap{gap:4px;align-items:flex-end;overflow:visible}
+.bar-col-a{min-width:0;position:relative}
+.bar-col-a.no-label .bar-lbl{visibility:hidden}
+.bar-lbl{white-space:nowrap;font-size:9px;line-height:1.05;min-height:18px;display:flex;align-items:flex-start;justify-content:center;text-align:center}
+.chart-tooltip{transform:translateX(-50%);box-shadow:0 10px 20px rgba(15,33,25,.18)}
+.emphasis-card .bar-chart-wrap{height:190px;padding-bottom:30px}
+.emphasis-card .bar-a{min-height:5px}
+@media(max-width:900px){.bar-chart-wrap{gap:3px}.bar-lbl{font-size:8.5px}}
+
+
+/* Trader analytics cleanup: keep chart tooltips inside the card and remove old centered tooltip offset. */
+.chart-svg-wrap,
+.chart-card-body{
+  position:relative;
+}
+.chart-tooltip{
+  transform:none!important;
+  max-width:190px;
+  box-shadow:0 10px 20px rgba(15,33,25,.18);
+  z-index:60;
+}
+.chart-svg-wrap .chart-tooltip{
+  left:8px;
+  top:8px;
+}

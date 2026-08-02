@@ -1,0 +1,86 @@
+.admin-topbar,
+  .topbar {
+    position: relative;
+    z-index: 8500 !important;
+  }
+
+  #sidebarToggle,
+  .admin-sidebar-toggle,
+  .sidebar-toggle {
+    position: relative;
+    z-index: 9000 !important;
+    cursor: pointer !important;
+    pointer-events: auto !important;
+    touch-action: manipulation;
+  }
+
+  #sidebarToggle svg,
+  .admin-sidebar-toggle svg,
+  .sidebar-toggle svg {
+    pointer-events: none;
+  }
+
+  .sidebar-overlay,
+  .admin-sidebar-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 7990 !important;
+    background: rgba(15, 46, 36, .35);
+    cursor: pointer;
+  }
+
+  .sidebar-overlay.active,
+  .admin-sidebar-overlay.active,
+  body.admin-sidebar-open .sidebar-overlay,
+  body.admin-sidebar-open .admin-sidebar-overlay {
+    display: block !important;
+  }
+
+  @media (max-width: 1100px) {
+    #sidebar,
+    .admin-sidebar,
+    .admin-sidebar.sidebar {
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
+      height: 100vh !important;
+      z-index: 8000 !important;
+      transform: translateX(-105%) !important;
+      transition: transform .22s ease, box-shadow .22s ease !important;
+    }
+
+    #sidebar.open,
+    .admin-sidebar.open,
+    .admin-sidebar.sidebar.open,
+    body.admin-sidebar-open #sidebar,
+    body.admin-sidebar-open .admin-sidebar,
+    body.admin-sidebar-open .admin-sidebar.sidebar {
+      transform: translateX(0) !important;
+      box-shadow: 4px 0 24px rgba(0, 0, 0, .18) !important;
+    }
+
+    .main,
+    .main-content,
+    .admin-main,
+    .admin-content,
+    .dashboard-main {
+      margin-left: 0 !important;
+      width: 100% !important;
+    }
+  }
+
+  @media (min-width: 1101px) {
+    body.admin-sidebar-open {
+      overflow: auto !important;
+    }
+  }
+
+  /* Match the sidebar breakpoint: once the sidebar collapses, the burger must be visible. */
+  @media (max-width: 1100px) {
+    #sidebarToggle,
+    .admin-sidebar-toggle,
+    .sidebar-toggle {
+      display: inline-flex !important;
+    }
+  }
